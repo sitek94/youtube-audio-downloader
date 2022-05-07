@@ -1,10 +1,9 @@
-from pytube import YouTube
+from pytube import Playlist
 
-url = 'https://www.youtube.com/watch?v=zIr_d1ZsIGQ'
+p = Playlist('https://www.youtube.com/playlist?list=PLS1QulWo1RIaJECMeUT4LFwJ-ghgoSH6n')
 
-if __name__ == '__main__':
-    yt = YouTube(url)
+NUMBER_OF_FILES_TO_DOWNLOAD = 3
 
-    # itag 139 -> audio/mp4
-    stream = yt.streams.get_by_itag(139)
-    stream.download()
+for video in p.videos[:NUMBER_OF_FILES_TO_DOWNLOAD]:
+    stream = video.streams.get_by_itag(139)
+    stream.download(output_path='downloads')
