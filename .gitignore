@@ -1,0 +1,9 @@
+# Virtual environment
+/venv
+
+# Downloaded files
+/downloads
+/output
+
+# IDE
+/.idea
