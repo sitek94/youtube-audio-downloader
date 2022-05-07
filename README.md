@@ -2,6 +2,11 @@
 
 🚧 Work in progress 🚧
 
+## References
+
+-[pytube](https://github.com/pytube/pytube)
+    - [RegexMatchError fix](https://github.com/pytube/pytube/issues/1311#issuecomment-1119179704)
+
 ## Development
 
 ```bash
